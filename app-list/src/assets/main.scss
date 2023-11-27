@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+$background: linear-gradient(90deg, rgba(48, 134, 156, 1) 0%, rgba(123, 25, 159, 1) 50%, rgba(255, 216, 133, 1) 100%);
+$white: #FFF;
+$text: #272727;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  max-width: 100vw;
+  background: $background;
+  background-repeat: no-repeat;
+  color: $white;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  display: grid;
+  place-content: center;
+}
+
+#app {
+  height: 100vh;
+  width: 800px;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 850px) {
+  #app {
+    width: 100vw;
+    height: 95vh;
+    padding: 1rem 2rem 2rem 2rem;
+  }
+}
