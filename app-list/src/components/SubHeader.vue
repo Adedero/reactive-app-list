@@ -45,19 +45,24 @@ const searchValue = ref('')
 .search-box {
     width: 50%;
     position: relative;
+    padding-left: 4px;
 
     input {
         height: 2rem;
-        width: 80%;
+        width: 95%;
         border-radius: 4px;
         padding: 0 2rem 0 1rem;
         font-size: 1rem;
+
+        &:focus {
+           box-shadow: 0 0 10px 1px rgb(255, 255, 255);
+        }
     }
 
     span {
         position: absolute;
         color: #212121;
-        right: 21%;
+        right: 6%;
         top: 10%;
     }
 }

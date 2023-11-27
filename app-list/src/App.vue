@@ -75,7 +75,7 @@ function sortApps(value) {
 <style scoped>
 main {
   width: 100%;
-  height: calc(100vh - 10rem);
+  height: calc(100vh - 10.5rem);
   overflow-y: scroll;
   padding: 1rem 0;
 }
